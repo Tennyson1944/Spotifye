@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 13px 14px 17px grey;
+            border: 2px solid black;
+            width: 350px;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgb(219, 250, 215);
+            margin-top: 30px;
+            
+        }
+        input{
+            background-color: transparent;
+
+        }
+        input:invalid:not(:placeholder-shown){
+            
+            border: red 5px solid;
+        }
+        input:valid{
+            border-color: green;
+        }
+        input:invalid+p{
+            color: red;
+        }
+       input:invalid~button[type="submit"]{
+        opacity: 0.6;
+        pointer-events: none;
+       }
+       h2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+    </style>
+</head>
+<body bgcolor="black">
+    <center><div><img id="img" src="Logo.png" height="200px" width="250px"></div>
+    <center>
+        <h2 style="color: rgb(156, 161, 164);">Log in to access your personalized music playlist.</h2>
+        <div class="container">
+            <div>
+                <font style="color: rgb(57, 36, 5); font-size: 16px;"><h2><b>Welcome,<br>Kindly provide your details to proceed.</b></h2></font>
+              </div>
+                    <form action="17.html">  
+                    <label>User ID</label><br>
+                    <input type="Text" placeholder="123ABC" required><br>
+                    <br>
+                    <label>Passsword</label><br>
+                    <input type="password" placeholder="Password" minlength="8" required>
+                    <p>Passsword must be atleast 8 character.</p>
+                    <br>
+                    <button type="submit">Sign In</button>
+                
+            </form>
+        
+        </div>
+    </center>
+</body>
+</html>
